@@ -23,7 +23,7 @@ let account = root.derivePath(path)
 let node = account.derive(0).derive(0)
 
 let btcAddress = bitcoin.payments.p2pkh({
-    pubkey: node.pubkey,
+    pubkey: node.publicKey,
     network: network,
 }).address
 
